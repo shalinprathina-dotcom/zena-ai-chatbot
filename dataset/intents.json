@@ -1,0 +1,337 @@
+{
+  "chatbot_name": "ZeNA",
+  "company": "ZeAI Soft",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good evening", "Start", "Begin"
+      ],
+      "responses": [
+        "Hi 👋 I am ZeNA, ZeAI Soft Assistant. Welcome to ZeAI Soft! 🚀 you can know more about me How can I help you today?"
+      ],
+      "options": ["Explore Services", "Training Programs", "Business Collaboration", "Other Enquiries"]
+    },
+    {
+      "tag": "explore_services",
+      "patterns": [
+        "Explore Services", "Explore Other Services", "What services do you offer", "Tell me about your services",
+        "Services", "What do you do", "ZeAI Soft services"
+      ],
+      "responses": [
+        "ZeAI Soft provides technology solutions to help businesses build innovative and scalable digital solutions."
+      ],
+      "options": [
+        "Custom Software Development", "Product Engineering Services",
+        "EdTech Solutions", "BeautyTech Solutions",
+        "AI Services & Manufacturing", "IT & AI Infrastructure Support"
+      ]
+    },
+    {
+      "tag": "custom_software_development",
+      "patterns": [
+        "Custom Software Development", "Custom software", "Software development",
+        "Build software", "Customized software", "Business application development"
+      ],
+      "responses": [
+        "ZeAI Soft provides custom software development solutions designed to meet specific business requirements.\nOur team helps businesses build scalable and efficient software solutions.\n\nServices include:\n• Customized Software Solutions\n• Business Application Development\n• Scalable Digital Solutions\n• Technology Integration\n\nWould you like to discuss your software requirements with our team?"
+      ],
+      "options": ["Yes", "No"]
+    },
+    {
+      "tag": "product_engineering_services",
+      "patterns": [
+        "Product Engineering Services", "Product engineering", "Product development",
+        "Build a product", "Digital product", "Software product"
+      ],
+      "responses": [
+        "ZeAI Soft provides Product Engineering Services to help businesses design, develop, and scale digital products with modern technologies.\n\nOur services include:\n• Product Development\n• Software Solutions\n• Scalable Application Development\n• Technology-driven Product Improvements\n\nWould you like to discuss your product requirements with our team?"
+      ],
+      "options": ["Yes, Connect with Team", "Explore Services"]
+    },
+    {
+      "tag": "edtech_solutions",
+      "patterns": [
+        "EdTech Solutions", "Education technology", "EdTech", "Digital learning",
+        "Learning platform", "E-learning solutions", "Online education"
+      ],
+      "responses": [
+        "ZeAI Soft provides EdTech solutions to create technology-driven learning experiences and digital platforms.\n\nKey Benefits:\n• Digital learning solutions\n• Technology-enabled education platforms\n• Scalable and user-friendly systems\n\nWould you like to discuss your requirements with our team?"
+      ],
+      "options": ["Yes", "No"]
+    },
+    {
+      "tag": "beautytech_solutions",
+      "patterns": [
+        "BeautyTech Solutions", "Beauty technology", "BeautyTech", "Beauty industry software",
+        "Digital beauty solutions", "Beauty app development"
+      ],
+      "responses": [
+        "ZeAI Soft provides BeautyTech solutions by combining technology and innovation to create smart solutions for the beauty industry.\nThese solutions help businesses improve their digital experience and provide technology-driven services.\n\nWould you like to discuss your requirements with our team?"
+      ],
+      "options": ["Yes", "No"]
+    },
+    {
+      "tag": "ai_services_manufacturing",
+      "patterns": [
+        "AI Services & Manufacturing", "AI for manufacturing", "Manufacturing automation",
+        "AI solutions", "Smart manufacturing", "AI automation", "Industrial AI"
+      ],
+      "responses": [
+        "ZeAI Soft provides AI-powered solutions for the manufacturing industry to improve processes, automation, and operational efficiency.\n\nOur solutions help businesses use intelligent technologies for:\n• AI-based automation\n• Smart manufacturing solutions\n• Data-driven insights\n• Process improvement\n\nWould you like to discuss your requirements with our team?"
+      ],
+      "options": ["Yes", "No"]
+    },
+    {
+      "tag": "it_ai_infrastructure_support",
+      "patterns": [
+        "IT & AI Infrastructure Support", "IT infrastructure", "AI infrastructure",
+        "Technology support", "Infrastructure management", "IT support"
+      ],
+      "responses": [
+        "ZeAI Soft provides IT and AI infrastructure support to help organizations build, manage, and maintain technology solutions.\n\nOur support includes:\n• AI infrastructure solutions\n• Technology integration support\n• Scalable IT solutions\n• Infrastructure management\n\nWould you like to discuss your requirements with our team?"
+      ],
+      "options": ["Yes", "No"]
+    },
+    {
+      "tag": "decline_response",
+      "patterns": [
+        "No", "No thanks", "Not now", "Maybe later", "Not interested right now"
+      ],
+      "responses": [
+        "No problem at all! Feel free to reach out whenever you're ready. Is there anything else I can help you with?"
+      ],
+      "options": ["Explore Services", "Training Programs", "Business Collaboration", "Other Enquiries"]
+    },
+    {
+      "tag": "training_programs",
+      "patterns": [
+        "Training Programs", "Back to Programs", "Back to Training Programs", "Training", "Courses", "Learn with ZeAI",
+        "Programs", "Skill development", "Student programs"
+      ],
+      "responses": [
+        "ZeAI Soft provides industry-focused training programs designed to help students develop technical skills and gain practical learning experience.\n\nWhich program would you like to know more about?"
+      ],
+      "options": ["ZeAI Skill-Up - On Campus", "Global Immersion Program", "Hackathon 2026", "Connect with Kirthika"]
+    },
+    {
+      "tag": "zeai_skillup_on_campus",
+      "patterns": [
+        "ZeAI Skill-Up - On Campus", "Skill-Up program", "On campus training",
+        "Campus program", "Student skill development", "Technical training"
+      ],
+      "responses": [
+        "ZeAI Skill-Up - On Campus is a student-focused skill development program by ZeAI Soft.\nThe program is designed to help students improve their technical knowledge through industry-oriented learning and practical exposure.\n\nProgram Highlights:\n• Industry-focused skill development\n• Practical learning approach\n• Technology-based training\n• Guidance and support from ZeAI Soft team"
+      ],
+      "options": ["Learning Areas", "Connect with Team", "Back to Training Programs"]
+    },
+    {
+      "tag": "learning_areas",
+      "patterns": [
+        "Learning Areas", "Back to Learning Areas", "What can I learn", "Topics", "Domains", "Subjects"
+      ],
+      "responses": [
+        "ZeAI Skill-Up - On Campus helps students explore and develop skills in emerging technology domains.\n\nWhich learning area would you like to explore?"
+      ],
+      "options": ["AI & Machine Learning", "Full Stack Development", "QA Automation", "Cloud & Infrastructure"]
+    },
+    {
+      "tag": "ai_machine_learning",
+      "patterns": [
+        "AI & Machine Learning", "Artificial Intelligence", "Machine Learning",
+        "AI training", "ML course", "Learn AI", "Data science"
+      ],
+      "responses": [
+        "AI & Machine Learning learning area focuses on helping students understand intelligent technologies and build knowledge in Artificial Intelligence and Machine Learning concepts.\n\nStudents can explore:\n• AI fundamentals\n• Machine Learning concepts\n• Data-driven solutions\n• Intelligent application development"
+      ],
+      "options": ["Connect with Team", "Back to Learning Areas"]
+    },
+    {
+      "tag": "full_stack_development",
+      "patterns": [
+        "Full Stack Development", "Full stack", "Web development", "Frontend",
+        "Backend", "Web app development", "MERN stack", "MEAN stack"
+      ],
+      "responses": [
+        "Full Stack Development learning area helps students understand the process of building complete web applications.\n\nStudents can explore:\n• Front-end development\n• Back-end development\n• Database concepts\n• Building web-based applications"
+      ],
+      "options": ["Connect with Team", "Back to Learning Areas"]
+    },
+    {
+      "tag": "qa_automation",
+      "patterns": [
+        "QA Automation", "Quality assurance", "Software testing", "Test automation",
+        "QA testing", "Automation testing"
+      ],
+      "responses": [
+        "QA Automation learning area helps students understand software testing processes and automation concepts.\n\nStudents can explore:\n• Software Testing Fundamentals\n• Test Automation Concepts\n• Quality Assurance Practices\n• Automation-based testing approaches"
+      ],
+      "options": ["Connect with Team", "Back to Learning Areas"]
+    },
+    {
+      "tag": "cloud_infrastructure",
+      "patterns": [
+        "Cloud & Infrastructure", "Cloud computing", "Cloud training", "DevOps",
+        "AWS", "Azure", "Cloud deployment", "Infrastructure"
+      ],
+      "responses": [
+        "Cloud & Infrastructure learning area helps students understand how modern applications are deployed, managed, and scaled using cloud technologies.\n\nStudents can explore:\n• Basics of Cloud Computing\n• Cloud Deployment Concepts\n• Infrastructure Management\n• Application Hosting & Scalability"
+      ],
+      "options": ["Connect with Team", "Back to Learning Areas"]
+    },
+    {
+      "tag": "global_immersion_program",
+      "patterns": [
+        "Global Immersion Program", "Global program", "International program",
+        "Immersion training", "Global learning"
+      ],
+      "responses": [
+        "Global Immersion Program is a training initiative by ZeAI Soft designed to provide students with broader exposure to industry learning and practical experience.\n\nThe program helps students understand real-world technology applications and improve their technical skills through guided learning sessions.\n\nWould you like to know more?"
+      ],
+      "options": ["Connect with Team", "Back to Training Programs"]
+    },
+    {
+      "tag": "hackathon_2026",
+      "patterns": [
+        "Hackathon 2026", "Back to Hackathon Details", "Hackathon", "Innovation event", "Coding competition",
+        "Team competition", "ZeAI hackathon"
+      ],
+      "responses": [
+        "Hackathon 2026 is an innovation event by ZeAI Soft that provides a platform for participants to develop and showcase technology-based solutions.\n\nHackathon Domains:\n• Artificial Intelligence & Automation\n• Healthcare & MedTech\n• Smart Education\n• Women Safety & Social Impact\n• Cybersecurity\n• FinTech & Digital Economy\n• Smart Mobility & Logistics\n• Sustainability & Climate Tech\n• Bharat & Regional Languages"
+      ],
+      "options": ["Participation Details", "Registration Details", "Connect with Team"]
+    },
+    {
+      "tag": "hackathon_participation_details",
+      "patterns": [
+        "Participation Details", "Who can participate", "Eligibility", "Team size",
+        "How to participate", "Hackathon rules"
+      ],
+      "responses": [
+        "Hackathon 2026 is open to students, professionals, developers, designers, and innovators from across India.\n\nWhether you are a beginner or an experienced developer, everyone is welcome to participate.\n\nRequired Details:\n• Team Member Name\n• Email Address\n• Mobile Number\n• Preferred Hackathon Domain\n• Previous Hackathon Experience"
+      ],
+      "options": ["Registration Details", "Connect with Team", "Back to Hackathon Details"]
+    },
+    {
+      "tag": "hackathon_registration",
+      "patterns": [
+        "Registration Details", "How to register", "Register for hackathon",
+        "Hackathon registration", "Sign up for hackathon"
+      ],
+      "responses": [
+        "To participate in Hackathon 2026, you can complete your registration through the official registration page.\n\n👉 Register here: https://www.zeaisoft.com/hackathon\n\nAfter registration, our team will review your details and contact you for further updates."
+      ],
+      "options": ["Participation Details", "Connect with Team", "Back to Training Programs"]
+    },
+    {
+      "tag": "connect_with_kirthika",
+      "patterns": [
+        "Connect with Kirthika", "Kirthika", "Talk to founder",
+        "Career guidance", "Mentor session", "1:1 session"
+      ],
+      "responses": [
+        "You can connect with Kirthika K – Founder of ZeAI Soft for career guidance, startup discussions, and personalized advice.\n\nThis session helps with:\n• Career direction\n• Startup journey\n• Resume & job-related queries\n• Project ideas"
+      ],
+      "options": ["Book Session", "Know More", "Back to Main Menu"]
+    },
+    {
+      "tag": "kirthika_know_more",
+      "patterns": [
+        "Know More", "More about Kirthika", "Who is Kirthika", "Founder details"
+      ],
+      "responses": [
+        "Kirthika K – Founder of ZeAI Soft\n\nKirthika offers practical guidance based on her experience in AI, product development, and leading a startup.\n\nThe 1:1 session can help you with:\n• Career clarity and direction\n• Startup journey guidance\n• Real-world problem solving\n• Resume and job-related discussions\n• Project and idea discussions"
+      ],
+      "options": ["Book Session", "Back to Main Menu"]
+    },
+    {
+      "tag": "book_session",
+      "patterns": [
+        "Book Session", "Schedule a session", "Book a session with Kirthika", "Book a call"
+      ],
+      "responses": [
+        "Great! Please share your details below and our team will schedule your 1:1 session with Kirthika."
+      ],
+      "form_fields": ["Name", "Email", "Phone Number", "Preferred Date/Time", "Topic to Discuss"]
+    },
+    {
+      "tag": "business_collaboration",
+      "patterns": [
+        "Business Collaboration", "Partner with ZeAI", "Collaborate", "Business partnership",
+        "Work with ZeAI Soft", "Corporate collaboration"
+      ],
+      "responses": [
+        "Thank you for your interest in collaborating with ZeAI Soft.\n\nZeAI Soft works with businesses and organizations to provide AI-driven solutions, technology services, and digital transformation support.\n\nPlease share your collaboration requirements."
+      ],
+      "form_fields": ["Name", "Company Name", "Email", "Phone Number", "Collaboration Requirement"]
+    },
+    {
+      "tag": "other_enquiries",
+      "patterns": [
+        "Other Enquiries", "I have a question", "General query", "Other questions",
+        "Help", "Support", "Something else"
+      ],
+      "responses": [
+        "Sure! Please enter your question or enquiry.\nI will help you with the relevant information about ZeAI Soft."
+      ],
+      "options": ["Connect with Team", "Back to Main Menu"]
+    },
+    {
+      "tag": "connect_with_team",
+      "patterns": [
+        "Connect with Team", "Talk to team", "Contact team", "Yes", "Yes, Connect with Team",
+        "I want to know more", "Get in touch"
+      ],
+      "responses": [
+        "Great! Please share your details so our team can understand your requirements better."
+      ],
+      "form_fields": ["Name", "Email", "Phone Number", "Requirement / Area of Interest"]
+    },
+    {
+      "tag": "form_submitted",
+      "patterns": [
+        "Form submitted", "Details shared", "Submitted"
+      ],
+      "responses": [
+        "Thank you for sharing your details.\nOur ZeAI Soft team will review your requirement and contact you soon."
+      ],
+      "options": ["Follow Instagram", "Join WhatsApp Community", "Follow LinkedIn"]
+    },
+    {
+      "tag": "stay_connected",
+      "patterns": [
+        "Follow Instagram", "Join WhatsApp Community", "Follow LinkedIn",
+        "Social media", "Follow ZeAI Soft", "WhatsApp group"
+      ],
+      "responses": [
+        "Stay connected with ZeAI Soft through our social channels!"
+      ],
+      "links": {
+        "Instagram": "https://www.instagram.com/zeai_soft?igsh=MW4zZW5nNGQ0dTF0Ng",
+        "WhatsApp Community": "https://www.whatsapp.com/channel/0029Vb2a8MG0AgWEmWpHX62K",
+        "LinkedIn": "https://www.linkedin.com/company/zeaisoft"
+      }
+    },
+    {
+      "tag": "back_to_main_menu",
+      "patterns": [
+        "Back to Main Menu", "Main menu", "Go back", "Start over", "Home"
+      ],
+      "responses": [
+        "Sure! 👋 Welcome back to ZeAI Soft Assistant.\nHow can I help you today?"
+      ],
+      "options": ["Explore Services", "Training Programs", "Business Collaboration", "Other Enquiries"]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "Did you eat", "What is your name", "Who are you", "Joke", "Random",
+        "Unrelated query", "Other topic"
+      ],
+      "responses": [
+        "I'm here to help you with ZeAI Soft services, programs, and support. Please select an option below."
+      ],
+      "options": ["Explore Services", "Training Programs", "Business Collaboration", "Other Enquiries"]
+    }
+  ]
+}
