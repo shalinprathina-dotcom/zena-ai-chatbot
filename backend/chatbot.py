@@ -175,12 +175,20 @@ class ZeNAChatbot:
         session = self._get_session(session_id)
 
         try:
-            supabase.table("contact_requests").insert({
-                "name": form_data.get("Name"),
-                "email": form_data.get("Email"),
-                "phone": form_data.get("Phone Number"),
-                "requirement": form_data.get("Requirement / Area of Interest")
+            name = form_data.get("Name")
+            email = form_data.get("Email")
+            phone = form_data.get("Phone Number")
+            requirement = form_data.get("Requirement / Area of Interest")
+
+            # Save lead to Supabase
+            result = supabase.table("contact_requests").insert({
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "requirement": requirement
             }).execute()
+
+            print("Supabase Insert Success:", result.data)
 
             session["history"].append({
                 "role": "user",
@@ -190,7 +198,9 @@ class ZeNAChatbot:
 
             payload = self._build_response("form_submitted")
 
-        except Exception:
+        except Exception as e:
+            print("SUPABASE INSERT ERROR:", e)
+
             payload = {
                 "intent": "error",
                 "message": "Sorry! Unable to save your details. Please try again.",
@@ -210,7 +220,3 @@ class ZeNAChatbot:
         payload["session_id"] = session_id
 
         return payload
-
-    def get_history(self, session_id):
-        session = self._get_session(session_id)
-        return session["history"]
