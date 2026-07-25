@@ -1,7 +1,7 @@
 # Python
 backend/venv/
 backend/__pycache__/
-backend/models/*.pkl
+# backend/models/*.pkl
 *.pyc
 
 # Environment Variables
